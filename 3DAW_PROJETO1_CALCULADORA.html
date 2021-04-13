@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <style>.erro{color:#FF0000}</style>
+	</head>
+	<body>
+		<h2>CALCULADORA 'PHP'</h2>
+		<p><span class="erro">Insira numeros inteiros</span></p>
+		<form method="post" action="funcaoSoma.php">
+		                                                            Num 1:<input type="number" name="primNum" value="<?php echo $primNum;?>">
+																	<span class="erro">#<?php echo $primNumErr?></span><br><br>
+																	Num 2:<input type="number" name="segNum" value="<?php echo $segNum;?>">
+																	<span class="erro">#<?php echo $segNumErr?></span><br><br>
+																	<input type="submit" name="soma" value="Soma">
+																	<input type="submit" formaction="funcaoDif.php" name="diferenca" value="Dif">
+																	<input type="submit" formaction="funcaoDiv.php" name="divisao" value="Div">
+																	<input type="submit" formaction="funcaoMult.php" name="multiplicacao" value="Mult">
+		     
+		</form>
+	</body>
+</html>
