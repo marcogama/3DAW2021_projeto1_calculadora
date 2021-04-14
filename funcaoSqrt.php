@@ -10,17 +10,12 @@
 														                        $primNumErr="Insira apenas numeros inteiros";
 												} 
 											}
-											if (empty($_POST["segNum"])){
-													                    $segNumErr="Insira o segundo numero";
-											}else{
-												$segNum=$_POST["segNum"];
-											    if (!preg_match("[0-9]",$segNum)){
-														                        $segNumErr="Insira apenas numeros inteiros";
-												} 
+											if (!empty($_POST["segNum"])){
+													                    $segNumErr="Nao preencha este campo";
 											}
-											echo "A soma eh:" .soma($_POST["primNum"],$_POST["segNum"]);
+											echo "A raiz quadrada eh:" .sqrt($_POST["primNum"],$_POST["segNum"]);
 	}
-	function soma($num1,$num2){
-	                        return $num1+$num2;
+	function sqrt($num1,$num2){
+	                        return $num1**"0.5";
 	}
 ?>

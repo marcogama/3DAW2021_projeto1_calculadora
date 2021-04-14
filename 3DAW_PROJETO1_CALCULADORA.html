@@ -4,7 +4,9 @@
 	    <style>.erro{color:#FF0000}</style>
 	</head>
 	<body>
+	    <h3>Marco R.G. Gama</h3>
 		<h2>CALCULADORA 'PHP'</h2>
+		
 		<p><span class="erro">Insira numeros inteiros</span></p>
 		<form method="post" action="funcaoSoma.php">
 		                                                            Num 1:<input type="number" name="primNum" value="<?php echo $primNum;?>">
@@ -15,6 +17,11 @@
 																	<input type="submit" formaction="funcaoDif.php" name="diferenca" value="Dif">
 																	<input type="submit" formaction="funcaoDiv.php" name="divisao" value="Div">
 																	<input type="submit" formaction="funcaoMult.php" name="multiplicacao" value="Mult">
+																	<input type="submit" formaction="funcaoMod.php" name="modulo" value="Mod">
+																	<input type="submit" formaction="funcaoPot.php" name="potencia" value="Pot"><br>
+																	<p><span class="erro">Para essas funcoes preencha apenas o primeiro campo</span></p>
+																	<input type="submit" formaction="funcaoInv" name="inverso" value="inv">
+																	<input type="submit" formaction="funcaoSqrt" name="raiz_quadrada" value="Sqrt">
 		     
 		</form>
 	</body>

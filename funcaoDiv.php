@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php
     $primNumErr=$segNumErr="";
 	$primNum=$segNum="";
@@ -13,7 +11,7 @@
 												} 
 											}
 											if (empty($_POST["segNum"])){
-													                    $segNumErr="Insira o primeiro numero";
+													                    $segNumErr="Insira o segundo numero";
 											}else{
 												$segNum=$_POST["segNum"];
 												if (!preg_match("[0-9]",$segNum)){
@@ -26,4 +24,3 @@
 	                        return $num1/$num2;
 	}
 ?>
-</html>
